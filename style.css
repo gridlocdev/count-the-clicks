@@ -33,13 +33,33 @@ header .info {
     display: flex;
     margin-left: auto;
     margin-right: 2.5%;
+    transition: 0.2s;
 }
 
 header .info:hover {
-    transition: 0.2s;
-    box-shadow: 2px 2px 2px 2px #222;
+    box-shadow: 2px 2px 2px 2px rgba(34, 34, 34, 0.5);
     border-radius: 1000px;
 }
+
+header .info:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip {
+    opacity: 0;
+    transition: opacity 0.2s;
+    right: 0;
+    margin-top: 5%;
+    margin-right: 0.5%;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: rgba(22, 22, 22, 0.5);
+    position: absolute;
+
+    pointer-events: none;
+
+}
+
 
 main {
     display: flex;
