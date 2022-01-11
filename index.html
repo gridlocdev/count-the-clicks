@@ -16,11 +16,17 @@
         <h2 class="title">
             Mouse Click Tester
         </h2>
-        <div class="info">
-            <img id="help-icon" src="./help_outline_white_36dp.svg" alt="help">
-            <span class="tooltip">
-                Click anywhere on the screen below to increment the counter!
-            </span>
+        <div class="right-nav-options">
+            <div id="reset-counter-container" class="icon-container" onclick="resetCounter()" >
+                <img id="reset-icon" class="icon" src="./images/reset-icon.svg" alt="reset">
+            </div>
+            <div id="help-container" class="icon-container" >
+                <img id="help-icon" class="icon" src="./images/help-icon.svg" alt="help">
+                <span class="tooltip">
+                    Click anywhere on the screen below to increment the counter, 
+                    <br>or the <img class="inline-text-icon" src="./images/reset-icon.svg" alt="help"> button to the left to reset the counter!
+                </span>
+            </div>
         </div>
     </header>
     <main>
